@@ -1,5 +1,6 @@
 from flask import Flask, request
 from chatbot.chat import get_response
+import os
 
 app = Flask(__name__)
 
@@ -11,4 +12,5 @@ def response():
 
 
 if __name__ == "__main__":
+  os.system('clear')
   app.run(debug=True)
