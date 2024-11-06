@@ -3,8 +3,8 @@ import json
 
 import torch
 
-from model import NeuralNet
-from nltk_utils import bag_of_words, tokenize
+from chatbot.model import NeuralNet
+from chatbot.nltk_utils import bag_of_words, tokenize
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -17,10 +17,10 @@ gemini_model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-with open('intents.json', 'r') as json_data:
+with open('chatbot/intents.json', 'r') as json_data:
     intents = json.load(json_data)
 
-FILE = "data.pth"
+FILE = "chatbot/data.pth"
 data = torch.load(FILE)
 
 input_size = data["input_size"]
