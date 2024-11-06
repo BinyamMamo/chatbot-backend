@@ -1,0 +1,101 @@
+{
+  "intents": [
+    {
+      "tag": "dealing_with_difficult_coworker",
+      "patterns": [
+        "How would you handle a difficult coworker?",
+        "How do you deal with difficult team members?",
+        "What would you do if you had a challenging coworker?",
+        "How do you handle conflicts with colleagues?",
+        "How would you approach a difficult coworker?"
+      ],
+      "responses": [
+        "I’d try to understand their perspective and address any miscommunication. Open and respectful communication can usually help clear up misunderstandings and build a better working relationship.",
+        "I’d remain focused on the work and keep interactions professional. I’d try to keep personal feelings aside and aim to find ways we can collaborate effectively.",
+        "I’d approach them directly to have an open conversation, focusing on how we can align better to reach our shared goals. If needed, I’d bring in a manager to mediate, but I’d aim to resolve it between us first.",
+        "I’d start by self-reflecting on how I might be contributing to the issue and make adjustments if needed. Then I’d initiate a friendly conversation to work on solutions together.",
+        "My approach would be to stay positive and focus on common goals. I’d try to find areas of agreement to improve our collaboration while keeping our communication clear and respectful."
+      ]
+    },
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?"
+      ],
+      "responses": [
+        "We sell coffee and tea",
+        "We have coffee and tea"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    }
+  ]
+}
