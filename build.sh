@@ -4,6 +4,6 @@
 # pip install Flask python-dotenv
 # pip install -q -U google-generativeai
 
-pip install Flask torch nltk
+pip install Flask numpy torch nltk
 python -c "import nltk; nltk.download('punkt_tab')"  # for windows
 python chatbot/train.py
