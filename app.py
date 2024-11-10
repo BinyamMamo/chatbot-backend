@@ -12,5 +12,4 @@ def response():
 
 
 if __name__ == "__main__":
-  os.system('clear')
   app.run(debug=True)

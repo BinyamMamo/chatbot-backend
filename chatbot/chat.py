@@ -6,15 +6,6 @@ import torch
 from chatbot.model import NeuralNet
 from chatbot.nltk_utils import bag_of_words, tokenize
 
-from dotenv import load_dotenv
-load_dotenv()
-
-import google.generativeai as genai
-import os
-
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-gemini_model = genai.GenerativeModel(model_name="gemini-1.5-flash")
-
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 with open('chatbot/intents.json', 'r') as json_data:
@@ -34,7 +25,7 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-bot_name = "Sam"
+bot_name = "Binyam"
 
 def get_response(msg):
     sentence = tokenize(msg)
@@ -53,14 +44,6 @@ def get_response(msg):
         for intent in intents['intents']:
             if tag == intent["tag"]:
                 return random.choice(intent['responses'])
-    else:
-        gemini_prompt = """Considering the context provided below answer the following question or prompt
-        context: you are a chatbot acting as a help desk. so u should keep ur answers short and they should sound humane. the company is called kofee and we sell coffee and tea. the manager is Mr. Bob.
-        question: """
-
-
-        response = gemini_model.generate_content(gemini_prompt + msg)
-        return response.text
     
     return "I do not understand..."
 
